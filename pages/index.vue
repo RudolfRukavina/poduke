@@ -3,23 +3,22 @@
     <Title>Naslovnica | Poduke Parallel</Title>
     <Meta name="description"
       content="Unaprijedite svoje učenje kroz naše iskustvo, poticaj i konstantnu podršku. Održavamo instrukcije iz svih obaveznih i velikog broja stručnih predmeta. Uspješno savladajte gradivo neophodno za polaganje državne mature uz Parallel poduke!" />
-    <Style type="text/css" />
   </Head>
   <!--Hero-->
   <ClientOnly>
 
-    <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
-
-      <div class="pt-10 py-2 mx-1" id='naslovnica'>
+    <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif">
+      <div class="pt-10 py-2 mx-1" id="naslovnica">
         <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
           <!--Left Col-->
           <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
-            <p class=" tracking-loose w-full">Dobrodošli na službenu stranicu</p>
-            <h2 class="mb-4  text-5xl font-bold leading-tight w-full">
+            <p class="tracking-loose w-full">Dobrodošli na službenu stranicu</p>
+            <h2 class="mb-4 text-5xl font-bold leading-tight w-full">
               Poduke Parallel
             </h2>
             <p class="leading-normal text-xl mb-8">
-              Unaprijedite svoje učenje kroz naše iskustvo, poticaj i konstantnu podršku.
+              Unaprijedite svoje učenje kroz naše iskustvo, poticaj i konstantnu
+              podršku.
             </p>
             <NuxtLink to="#usluge"
               class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
@@ -29,7 +28,6 @@
           <!--Right Col-->
           <div class="w-full md:w-3/5 py-6 text-center">
             <img class="w-full md:w-4/5 z-50" src="../assets/hero.png" />
-
           </div>
         </div>
       </div>
@@ -56,7 +54,7 @@
           </g>
         </svg>
       </div>
-      <section class="content-section  bg-white py-16 -my-[1px]" id="usluge">
+      <section class="content-section bg-white py-16 -my-[1px]" id="usluge">
         <div class="container mx-auto px-4 lg:px-5">
           <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
             Usluge
@@ -67,7 +65,8 @@
           <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
             <div class="col-span-1 lg:col-span-1">
               <NuxtLink class="portfolio-item block relative" to="/pripreme">
-                <div class="absolute inset-0 bg-black bg-opacity-50 transition-opacity lg:opacity-0 hover:opacity-100">
+                <div
+                  class="absolute inset-0 bg-black bg-opacity-50 transition-opacity lg:opacity-75  hover:opacity-100 hover:border border-white">
                   <div class="caption absolute inset-0 flex items-center justify-center">
                     <div class="text-white text-center">
                       <h3 class="text-2xl">Pripreme za državnu maturu</h3>
@@ -79,7 +78,8 @@
             </div>
             <div class="col-span-1 lg:col-span-1">
               <NuxtLink class="portfolio-item block relative" to="/instrukcije">
-                <div class="absolute inset-0 bg-black bg-opacity-50 transition-opacity lg:opacity-0 hover:opacity-100">
+                <div
+                  class="absolute inset-0 bg-black bg-opacity-50 transition-opacity lg:opacity-75  hover:opacity-100 hover:border border-white">
                   <div class="caption absolute inset-0 flex items-center justify-center">
                     <div class="text-white text-center">
                       <h3 class="text-2xl">Instrukcije</h3>
@@ -89,22 +89,10 @@
                 <img class="object-cover w-full h-full" src="../assets/img/portfolio-1.jpg" alt="..." />
               </NuxtLink>
             </div>
-
-            <!-- <div class="col-span-1 lg:col-span-1">
-            <NuxtLink class="portfolio-item block relative" to="/ostalo">
-              <div class="absolute inset-0 bg-black bg-opacity-50 transition-opacity lg:opacity-0 hover:opacity-100">
-                <div class="caption absolute inset-0 flex items-center justify-center">
-                  <div class="text-white text-center">
-                    <div class="text-2xl">Tečajevi</div>
-                  </div>
-                </div>
-              </div>
-              <img class="object-cover w-full h-full" src="../assets/img/portfolio-3.jpg" alt="..." />
-            </NuxtLink>
-          </div> -->
             <div class="col-span-1 lg:col-span-1">
               <NuxtLink class="portfolio-item block relative" to="/ostalo">
-                <div class=" absolute inset-0 bg-black bg-opacity-50 transition-opacity lg:opacity-0 hover:opacity-100">
+                <div
+                  class="absolute inset-0 bg-black bg-opacity-50 transition-opacity lg:opacity-75 hover:opacity-100 hover:border border-white">
                   <div class="caption absolute inset-0 flex items-center justify-center">
                     <div class="text-white text-center">
                       <h3 class="text-2xl">Ostale usluge</h3>
@@ -116,12 +104,8 @@
             </div>
           </div>
         </div>
-
       </section>
 
-
-
-      <!-- Change the colour #f8fafc to match the previous section colour -->
       <div class="relative">
         <svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -149,19 +133,15 @@
           </g>
         </svg>
       </div>
-      <section class="container mx-auto text-center py-1 pb-10 " id='radnovrijeme'>
+      <section class="container mx-auto text-center py-1 pb-10" id="radnovrijeme">
         <h3 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
           Radno vrijeme
         </h3>
         <div class="w-full mb-4">
           <div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
         </div>
-        <h3 class="my-4 text-3xl leading-tight">
-          10:00 - 21:00
-        </h3>
-        <h3 class="my-4 text-3xl leading-tight">
-          Otvoreni smo svaki dan!
-        </h3>
+        <h3 class="my-4 text-3xl leading-tight">10:00 - 21:00</h3>
+        <h3 class="my-4 text-3xl leading-tight">Otvoreni smo svaki dan!</h3>
         <a href="tel:+385917865619">
           <button
             class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
@@ -195,98 +175,62 @@
     </body>
   </ClientOnly>
 </template>
+
 <script setup>
-  import { ref } from "vue"
-  import { onMounted } from 'vue'
-  import {
-    initAccordions,
-    initCarousels,
-    initCollapses,
-    initDials,
-    initDismisses,
-    initDrawers,
-    initDropdowns,
-    initModals,
-    initPopovers,
-    initTabs,
-    initTooltips
-  } from 'flowbite'
-
-  // initialize components based on data attribute selectors
-  onMounted(() => {
-    initAccordions();
-    initCarousels();
-    initCollapses();
-    initDials();
-    initDismisses();
-    initDrawers();
-    initDropdowns();
-    initModals();
-    initPopovers();
-    initTabs();
-    initTooltips();
-  })
-
-
   useHead({
-    title: 'Poduke Parallel',
+    title: "Poduke Parallel",
     meta: [
-      { name: 'description', content: 'Učenje bez muke, uz Parallel poduke! Unaprijedite svoje učenje kroz naše iskustvo, poticaj i konstantnu podršku. Održavamo instrukcije iz svih obaveznih i velikog broja stručnih predmeta. Uspješno savladajte gradivo neophodno za polaganje državne mature uz Parallel poduke!' },
-      { hid: 'og:url', property: 'og:url', content: 'https://poduke.vercel.app' },
-      { hid: 'og:type', property: 'og:type', content: 'website' },
-      { hid: 'og:title', property: 'og:title', content: 'Poduke Parallel' },
-      { hid: 'og:description', property: 'og:description', content: 'Učenje bez muke, uz Parallel poduke! Unaprijedite svoje učenje kroz naše iskustvo, poticaj i konstantnu podršku. Održavamo instrukcije iz svih obaveznih i velikog broja stručnih predmeta. Uspješno savladajte gradivo neophodno za polaganje državne mature uz Parallel poduke!' },
-      { hid: 'og:image', property: 'og:image', content: 'https://scontent.fzag3-1.fna.fbcdn.net/v/t39.30808-6/272268092_113057891271813_5228490678392803109_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c83dfd&_nc_ohc=tE_wpawNL4kAX9GyzDx&_nc_ht=scontent.fzag3-1.fna&oh=00_AfBkGnVM38X-D7-m6IuBugqorWq_5Q3J1VTUH1gAQ4Q_qQ&oe=65C3BB15' }
+      {
+        name: "description",
+        content:
+          "Učenje bez muke, uz Parallel poduke! Unaprijedite svoje učenje kroz naše iskustvo, poticaj i konstantnu podršku. Održavamo instrukcije iz svih obaveznih i velikog broja stručnih predmeta. Uspješno savladajte gradivo neophodno za polaganje državne mature uz Parallel poduke!",
+      },
+      { hid: "og:url", property: "og:url", content: "https://parallel.hr" },
+      { hid: "og:type", property: "og:type", content: "website" },
+      { hid: "og:title", property: "og:title", content: "Poduke Parallel" },
+      {
+        hid: "og:description",
+        property: "og:description",
+        content:
+          "Učenje bez muke, uz Parallel poduke! Unaprijedite svoje učenje kroz naše iskustvo, poticaj i konstantnu podršku. Održavamo instrukcije iz svih obaveznih i velikog broja stručnih predmeta. Uspješno savladajte gradivo neophodno za polaganje državne mature uz Parallel poduke!",
+      },
+      {
+        hid: "og:image",
+        property: "og:image",
+        content:
+          "https://scontent.fzag3-1.fna.fbcdn.net/v/t39.30808-6/272268092_113057891271813_5228490678392803109_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c83dfd&_nc_ohc=tE_wpawNL4kAX9GyzDx&_nc_ht=scontent.fzag3-1.fna&oh=00_AfBkGnVM38X-D7-m6IuBugqorWq_5Q3J1VTUH1gAQ4Q_qQ&oe=65C3BB15",
+      },
     ],
 
     bodyAttrs: {
-      class: ''
+      class: "",
     },
-    script: []
-  })
+    script: [],
+  });
 
   useSeoMeta({
-    title: 'Poduke Parallel',
-    ogTitle: 'Poduke Parallel',
-    description: 'Učenje bez muke, uz Parallel poduke! Unaprijedite svoje učenje kroz naše iskustvo, poticaj i konstantnu podršku. Održavamo instrukcije iz svih obaveznih i velikog broja stručnih predmeta. Uspješno savladajte gradivo neophodno za polaganje državne mature uz Parallel poduke!',
-    ogDescription: 'Učenje bez muke, uz Parallel poduke! Unaprijedite svoje učenje kroz naše iskustvo, poticaj i konstantnu podršku. Održavamo instrukcije iz svih obaveznih i velikog broja stručnih predmeta. Uspješno savladajte gradivo neophodno za polaganje državne mature uz Parallel poduke!',
-    ogImage: 'https://scontent.fzag3-1.fna.fbcdn.net/v/t39.30808-6/272268092_113057891271813_5228490678392803109_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c83dfd&_nc_ohc=tE_wpawNL4kAX9GyzDx&_nc_ht=scontent.fzag3-1.fna&oh=00_AfBkGnVM38X-D7-m6IuBugqorWq_5Q3J1VTUH1gAQ4Q_qQ&oe=65C3BB15',
-    twitterCard: 'https://scontent.fzag3-1.fna.fbcdn.net/v/t39.30808-6/272268092_113057891271813_5228490678392803109_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c83dfd&_nc_ohc=tE_wpawNL4kAX9GyzDx&_nc_ht=scontent.fzag3-1.fna&oh=00_AfBkGnVM38X-D7-m6IuBugqorWq_5Q3J1VTUH1gAQ4Q_qQ&oe=65C3BB15',
-  })
-
-  // initialize components based on data attribute selectors
-  onMounted(() => {
-    initAccordions();
-    initCarousels();
-    initCollapses();
-    initDials();
-    initDismisses();
-    initDrawers();
-    initDropdowns();
-    initModals();
-    initPopovers();
-    initTabs();
-    initTooltips();
-  })
-
-
-
-
-
+    title: "Poduke Parallel",
+    ogTitle: "Poduke Parallel",
+    description:
+      "Učenje bez muke, uz Parallel poduke! Unaprijedite svoje učenje kroz naše iskustvo, poticaj i konstantnu podršku. Održavamo instrukcije iz svih obaveznih i velikog broja stručnih predmeta. Uspješno savladajte gradivo neophodno za polaganje državne mature uz Parallel poduke!",
+    ogDescription:
+      "Učenje bez muke, uz Parallel poduke! Unaprijedite svoje učenje kroz naše iskustvo, poticaj i konstantnu podršku. Održavamo instrukcije iz svih obaveznih i velikog broja stručnih predmeta. Uspješno savladajte gradivo neophodno za polaganje državne mature uz Parallel poduke!",
+    ogImage:
+      "https://scontent.fzag3-1.fna.fbcdn.net/v/t39.30808-6/272268092_113057891271813_5228490678392803109_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c83dfd&_nc_ohc=tE_wpawNL4kAX9GyzDx&_nc_ht=scontent.fzag3-1.fna&oh=00_AfBkGnVM38X-D7-m6IuBugqorWq_5Q3J1VTUH1gAQ4Q_qQ&oe=65C3BB15",
+    twitterCard:
+      "https://scontent.fzag3-1.fna.fbcdn.net/v/t39.30808-6/272268092_113057891271813_5228490678392803109_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c83dfd&_nc_ohc=tE_wpawNL4kAX9GyzDx&_nc_ht=scontent.fzag3-1.fna&oh=00_AfBkGnVM38X-D7-m6IuBugqorWq_5Q3J1VTUH1gAQ4Q_qQ&oe=65C3BB15",
+  });
 </script>
 
 <style scoped>
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
 
-
-
 .gradient {
-  background: #00B4DB;
+  background: #00b4db;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);
+  background: -webkit-linear-gradient(to right, #0083b0, #00b4db);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #0083B0, #00B4DB);
+  background: linear-gradient(to right, #0083b0, #00b4db);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
 </style>

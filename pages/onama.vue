@@ -3,18 +3,17 @@
     <Title>O nama | Poduke Parallel</Title>
     <Meta name="description"
       content="Parallel je novo osnovana škola čiji je temeljni cilj olakšati učenje kroz organizaciju individualnih i grupnih poduka, seminara, radionica i predavanja. Cilj nam je uz konstantno unaprijeđivanje usluga i praćenje najnovijih trendova omogućiti obrazovanje i poučavanje iz raznovrsnih područja za sve uzraste." />
-    <Style type="text/css" />
   </Head>
 
   <ClientOnly>
 
-    <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
-      <div class="py-10 mx-1" id='naslovnica'>
+    <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif">
+      <div class="py-10 mx-1" id="naslovnica">
         <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
           <!--Left Col-->
           <div class="flex flex-col w-full md:w-3/5 justify-center items-start text-center md:text-left">
-            <p class=" tracking-loose w-full">O nama</p>
-            <h1 class="mb-4  text-5xl lg:text-6xl font-bold leading-tight w-full">
+            <p class="tracking-loose w-full">O nama</p>
+            <h1 class="mb-4 text-5xl lg:text-6xl font-bold leading-tight w-full">
               Parallel Poduke
             </h1>
             <p class="leading-normal text-lg text-center w-full md:w-auto mb-8">
@@ -27,14 +26,12 @@
           </div>
           <!--Right Col-->
           <div class="w-full md:w-2/5 py-6 text-center">
-            <div class=' '>
+            <div>
               <div
                 class="max-w-md dark:ring-white/10 ring-primary/5 shadow-xl dark:shadow-thick rounded-3xl p-8 lg:row-start-4 h-full flex flex-col justify-between bg-white dark:bg-secondary">
-                <p class="text-xl tracking-tight font-medium text-black text-start  md:text-5xl">
+                <p class="text-xl tracking-tight font-medium text-black text-start md:text-5xl">
                   Iskustva
                 </p>
-
-
                 <div class="flex items-center mb-2">
                   <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor" viewBox="0 0 22 20">
@@ -61,11 +58,19 @@
                     <path
                       d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
                   </svg>
-                  <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">5</p>
-                  <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">out of</p>
-                  <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">5</p>
+                  <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">
+                    5
+                  </p>
+                  <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">
+                    out of
+                  </p>
+                  <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">
+                    5
+                  </p>
                 </div>
-                <p class="text-sm text-start font-medium text-gray-500">9 global ratings</p>
+                <p class="text-sm text-start font-medium text-gray-500">
+                  9 global ratings
+                </p>
                 <div class="flex items-center mt-4">
                   <a href="#" class="text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">5 star</a>
                   <div class="w-2/4 h-5 mx-4 bg-gray-200 rounded dark:bg-gray-700">
@@ -101,32 +106,33 @@
                   </div>
                   <span class="text-sm font-medium text-gray-500 dark:text-gray-400">0%</span>
                 </div>
-
                 <div class="md:grid md:grid-cols-2 gap-2 lg:grid-cols-1 text-start">
                   <div class="mt-4">
                     <p class="text-sm text-pink-500 dark:text-pink-400">
-                      "Dijete je koristilo instrukcije iz hrvatskog jezika. Sve mu je lijepo objašnjeno. Jako smo
-                      zadovoljni."
+                      "Dijete je koristilo instrukcije iz hrvatskog jezika. Sve
+                      mu je lijepo objašnjeno. Jako smo zadovoljni."
                     </p>
-                    <p class="text-xs mt-2 text-zinc-500"> <span class="block text-xs">Andrea</span> </p>
+                    <p class="text-xs mt-2 text-zinc-500">
+                      <span class="block text-xs">Andrea</span>
+                    </p>
                   </div>
                   <div class="mt-4">
                     <p class="text-sm text-orange-500 dark:text-orange-300">
-                      "Bio i blago rečeno, bio sam oduševljen! Mlada i entuzijastična ekipa koja gura i radi izvrstan
-                      posao.
-                      Topla
-                      preporuka! Hvala još jednom instruktoru Ivanu na podukama :)"
+                      "Bio i blago rečeno, bio sam oduševljen! Mlada i
+                      entuzijastična ekipa koja gura i radi izvrstan posao.
+                      Topla preporuka! Hvala još jednom instruktoru Ivanu na
+                      podukama :)"
                     </p>
-                    <p class="text-xs mt-2 text-zinc-500"> <span class="block text-xs">Edin Secerkadic</span> </p>
+                    <p class="text-xs mt-2 text-zinc-500">
+                      <span class="block text-xs">Edin Secerkadic</span>
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
-
       <div class="relative -mt-12 lg:-mt-24">
         <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -150,43 +156,44 @@
           </g>
         </svg>
       </div>
-      <section class="bg-white py-8 -my-[1px]" id='stojeparallel'>
+      <section class="bg-white py-8 -my-[1px]" id="stojeparallel">
         <div class="container max-w-5xl mx-auto m-8">
           <h2 class="w-full my-2 text-3xl font-bold leading-tight text-center text-gray-800">
-            Što je
-            Parallel? 🔍
+            Što je Parallel? 🔍
           </h2>
           <div class="w-full mb-4">
             <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
           </div>
           <p class="text-sm mt-3 font-medium lg:text-xl mx-8 tracking-tight text-black">
-            <br>
-            Parallel je novo osnovana škola čiji je temeljni cilj olakšati učenje kroz organizaciju individualnih i
-            grupnih
-            poduka, seminara, radionica i predavanja. Školu Parallel utemeljila su četiri mlada stručnjaka u Rijeci u
-            želji
-            da svojim znanjem i iskustvom organiziraju učenje na pristupačan i zanimljiv način. Cilj nam je uz konstantno
-            unaprijeđivanje usluga i praćenje najnovijih trendova omogućiti obrazovanje i poučavanje iz raznovrsnih
-            područja
-            za sve uzraste. 🤓
+            <br />
+            Parallel je novo osnovana škola čiji je temeljni cilj olakšati
+            učenje kroz organizaciju individualnih i grupnih poduka, seminara,
+            radionica i predavanja. Školu Parallel utemeljila su četiri mlada
+            stručnjaka u Rijeci u želji da svojim znanjem i iskustvom
+            organiziraju učenje na pristupačan i zanimljiv način. Cilj nam je uz
+            konstantno unaprijeđivanje usluga i praćenje najnovijih trendova
+            omogućiti obrazovanje i poučavanje iz raznovrsnih područja za sve
+            uzraste. 🤓
           </p>
-          <p class="text-sm mt-3 font-medium lg:text-xl mx-8 tracking-tight text-black"> <br />
-            Kroz godine školovanja, suočavali smo se s izazovima obrazovnog sustava i prepoznali njegove nedostatke. Ovim
-            putem želimo pružiti pomoć svima koji se suočavaju s različitim preprekama, sličnim onima koje smo i sami
-            prevladavali tokom obrazovnog procesa. Budući da smo mladi i svjesni, vjerujemo da možemo prenositi znanje na
-            jednostavan i zanimljiv način. Naš cilj je
-            unaprijediti
-            obrazovno iskustvo, čineći ga
-            pristupačnijim i uzbudljivijim za sve.</p>
+          <p class="text-sm mt-3 font-medium lg:text-xl mx-8 tracking-tight text-black">
+            <br />
+            Kroz godine školovanja, suočavali smo se s izazovima obrazovnog
+            sustava i prepoznali njegove nedostatke. Ovim putem želimo pružiti
+            pomoć svima koji se suočavaju s različitim preprekama, sličnim onima
+            koje smo i sami prevladavali tokom obrazovnog procesa. Budući da smo
+            mladi i svjesni, vjerujemo da možemo prenositi znanje na jednostavan
+            i zanimljiv način. Naš cilj je unaprijediti obrazovno iskustvo,
+            čineći ga pristupačnijim i uzbudljivijim za sve.
+          </p>
         </div>
-        <div class='flex justify-center' id='cestapitanja'>
-          <NuxtLink to='#cestapitanja'
-            class="mx-auto lg:mx-0 gradient text-white hover:underline  font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+        <div class="flex justify-center" id="cestapitanja">
+          <NuxtLink to="#cestapitanja"
+            class="mx-auto lg:mx-0 gradient text-white hover:underline font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
             Česta pitanja
           </NuxtLink>
         </div>
       </section>
-      <div class='relative -mb-[1px]'>
+      <div class="relative -mb-[1px]">
         <svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink">
           <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -215,8 +222,9 @@
       </div>
       <section class="container mx-auto px-5 text-center py-6">
         <h2 class="w-full my-2 text-xl lg:text-3xl font-bold leading-tight text-center text-white">
-          📍 Nalazimo se na adresi <a href="https://maps.app.goo.gl/9dFa9f6sUkVuHxRD9" target='_blank'
-            class='hover:text-gray-100 underline cursor-pointer '>Riva 20, Rijeka</a>
+          📍 Nalazimo se na adresi
+          <a href="https://maps.app.goo.gl/9dFa9f6sUkVuHxRD9" target="_blank"
+            class="hover:text-gray-100 underline cursor-pointer">Riva 20, Rijeka</a>
         </h2>
         <div class="w-full mb-4">
           <div class="h-1 mx-auto bg-white w-2/6 opacity-25 my-0 py-0 rounded-t"></div>
@@ -266,24 +274,24 @@
 
 <script setup>
   useSeoMeta({
-    title: 'O nama | Poduke Parallel',
-    ogTitle: 'O nama | Poduke Parallel',
-    description: 'Parallel je novo osnovana škola čiji je temeljni cilj olakšati učenje kroz organizaciju individualnih i grupnih poduka, seminara, radionica i predavanja. Cilj nam je uz konstantno unaprijeđivanje usluga i praćenje najnovijih trendova omogućiti obrazovanje i poučavanje iz raznovrsnih područja za sve uzraste.',
-    ogDescription: 'Parallel je novo osnovana škola čiji je temeljni cilj olakšati učenje kroz organizaciju individualnih i grupnih poduka, seminara, radionica i predavanja. Cilj nam je uz konstantno unaprijeđivanje usluga i praćenje najnovijih trendova omogućiti obrazovanje i poučavanje iz raznovrsnih područja za sve uzraste.',
-    ogImage: 'https://poduke.vercel.app/ucionica.jpeg',
-    twitterCard: 'https://poduke.vercel.app/ucionica.jpeg',
-  })
-
+    title: "O nama | Poduke Parallel",
+    ogTitle: "O nama | Poduke Parallel",
+    description:
+      "Parallel je novo osnovana škola čiji je temeljni cilj olakšati učenje kroz organizaciju individualnih i grupnih poduka, seminara, radionica i predavanja. Cilj nam je uz konstantno unaprijeđivanje usluga i praćenje najnovijih trendova omogućiti obrazovanje i poučavanje iz raznovrsnih područja za sve uzraste.",
+    ogDescription:
+      "Parallel je novo osnovana škola čiji je temeljni cilj olakšati učenje kroz organizaciju individualnih i grupnih poduka, seminara, radionica i predavanja. Cilj nam je uz konstantno unaprijeđivanje usluga i praćenje najnovijih trendova omogućiti obrazovanje i poučavanje iz raznovrsnih područja za sve uzraste.",
+    ogImage: "https://parallel.hr/ucionica.jpeg",
+    twitterCard: "https://parallel.hr/ucionica.jpeg",
+  });
 </script>
 
 <style scoped>
 .gradient {
-  background: #1488CC;
+  background: #1488cc;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);
+  background: -webkit-linear-gradient(to right, #2b32b2, #1488cc);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2B32B2, #1488CC);
+  background: linear-gradient(to right, #2b32b2, #1488cc);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
 </style>

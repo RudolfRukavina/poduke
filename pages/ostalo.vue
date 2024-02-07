@@ -3,18 +3,19 @@
     <Title>Ostale usluge | Poduke Parallel</Title>
     <Meta name="description"
       content="Tu smo da vam pomognemo! Nudimo usluge pomoći u pisanju zadaća, seminara, projekata i lektira! Također nudimo usluge pripreme za natjecanja, organizacije seminara te edukacije iz različitih područja!" />
-    <Style type="text/css" />
   </Head>
 
   <ClientOnly>
 
-    <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
-      <div class="py-10 mx-1" id='naslovnica' idk>
+    <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif">
+      <div class="py-10 mx-1" id="naslovnica">
         <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
           <!--Left Col-->
           <div class="flex flex-col w-full md:w-3/5 justify-center items-start text-center md:text-left">
-            <p class=" tracking-loose w-full">Bez puno muke, uz Parallel poduke!</p>
-            <h1 class="mb-4  text-5xl lg:text-6xl font-bold leading-tight w-full">
+            <p class="tracking-loose w-full">
+              Bez puno muke, uz Parallel poduke!
+            </p>
+            <h1 class="mb-4 text-5xl lg:text-6xl font-bold leading-tight w-full">
               Ostale usluge
             </h1>
             <p class="leading-normal text-lg text-center w-full md:w-auto mb-8">
@@ -28,8 +29,6 @@
           <!--Right Col-->
           <div class="w-full md:w-2/5 py-6 text-center">
             <img class="w-full md:w-4/5 z-50 rounded-xl" src="../assets/img/ostaleusluge.png" />
-
-
           </div>
         </div>
       </div>
@@ -62,13 +61,15 @@
 
 <script setup>
   useSeoMeta({
-    title: 'Ostale usluge | Poduke Parallel',
-    ogTitle: 'Ostale usluge | Poduke Parallel',
-    description: 'Tu smo da vam pomognemo! Nudimo usluge pomoći u pisanju zadaća, seminara, projekata i lektira! Također nudimo usluge pripreme za natjecanja, organizacije seminara te edukacije iz različitih područja!',
-    ogDescription: 'Tu smo da vam pomognemo! Nudimo usluge pomoći u pisanju zadaća, seminara, projekata i lektira! Također nudimo usluge pripreme za natjecanja, organizacije seminara te edukacije iz različitih područja!',
-    ogImage: 'https://poduke.vercel.app/ostaleusluge.png',
-    twitterCard: 'https://poduke.vercel.app/ostaleusluge.png',
-  })
+    title: "Ostale usluge | Poduke Parallel",
+    ogTitle: "Ostale usluge | Poduke Parallel",
+    description:
+      "Tu smo da vam pomognemo! Nudimo usluge pomoći u pisanju zadaća, seminara, projekata i lektira! Također nudimo usluge pripreme za natjecanja, organizacije seminara te edukacije iz različitih područja!",
+    ogDescription:
+      "Tu smo da vam pomognemo! Nudimo usluge pomoći u pisanju zadaća, seminara, projekata i lektira! Također nudimo usluge pripreme za natjecanja, organizacije seminara te edukacije iz različitih područja!",
+    ogImage: "https://parallel.hr/ostaleusluge.png",
+    twitterCard: "https://parallel.hr/ostaleusluge.png",
+  });
 </script>
 
 <style scoped>
@@ -79,6 +80,5 @@
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #0072ff, #00c6ff);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
 </style>

@@ -3,19 +3,19 @@
     <Title>Instrukcije | Poduke Parallel</Title>
     <Meta name="description" content="Bez puno muke, uz Parallel poduke! Održavamo instrukcije iz svih obaveznih i velikog broja stručnih
             predmeta!" />
-    <Style type="text/css" />
   </Head>
 
   <ClientOnly>
 
-    <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
-
-      <div class="py-10 mx-1" id='naslovnica'>
+    <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif">
+      <div class="py-10 mx-1" id="naslovnica">
         <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
           <!--Left Col-->
           <div class="flex flex-col w-full md:w-3/5 justify-center items-start text-center md:text-left">
-            <p class=" tracking-loose w-full">Bez puno muke, uz Parallel poduke!</p>
-            <h1 class="mb-4  text-5xl lg:text-6xl font-bold leading-tight w-full">
+            <p class="tracking-loose w-full">
+              Bez puno muke, uz Parallel poduke!
+            </p>
+            <h1 class="mb-4 text-5xl lg:text-6xl font-bold leading-tight w-full">
               Instrukcije
             </h1>
             <p class="leading-normal text-lg mb-8">
@@ -29,18 +29,11 @@
           </div>
           <!--Right Col-->
           <div class="w-full md:w-2/5 py-6 text-center">
-            <!-- <img class="w-full md:w-4/5 z-50"
-          src="" /> -->
-
-
-
             <div class="w-full md:w-4/5 py-6 text-center">
-
-              <img class="w-full md:w-4/5 z-50 rounded-xl" src="../assets/img/osnovnaskola.jpeg" v-show='count === 1' />
-              <img class="w-full md:w-4/5 z-50 rounded-xl" src="../assets/img/srednjaskola.jpeg" v-show='count === 2' />
-              <img class="w-full md:w-4/5 z-50 rounded-xl" src="../assets/img/fakultet.jpeg" v-show='count === 3' />
+              <img class="w-full md:w-4/5 z-50 rounded-xl" src="../assets/img/osnovnaskola.jpeg" v-show="count === 1" />
+              <img class="w-full md:w-4/5 z-50 rounded-xl" src="../assets/img/srednjaskola.jpeg" v-show="count === 2" />
+              <img class="w-full md:w-4/5 z-50 rounded-xl" src="../assets/img/fakultet.jpeg" v-show="count === 3" />
             </div>
-
           </div>
         </div>
       </div>
@@ -67,7 +60,7 @@
           </g>
         </svg>
       </div>
-      <section class="bg-white py-8 -my-[1px]" id='cjenik'>
+      <section class="bg-white py-8 -my-[1px]" id="cjenik">
         <div class="container max-w-5xl mx-auto m-8">
           <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
             Cjenik
@@ -75,21 +68,20 @@
           <div class="w-full mb-4">
             <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
           </div>
-          <div class="" id='osnovnaskola'>
-            <div class="w-full  p-6 pb-1">
+          <div class="" id="osnovnaskola">
+            <div class="w-full p-6 pb-1">
               <h3 class="text-3xl w-full flex justify-center text-gray-800 font-bold leading-none mb-3">
                 Osnovna škola
               </h3>
               <p class="text-gray-600 flex justify-center mb-1">
                 Instrukcije za osnovnu školu
-
               </p>
             </div>
             <div class="w-full flex justify-center p-1 px-5">
               <table class="max-w-md w-full text-sm text-left rtl:text-right border-2 text-gray-500 border-slate-800">
-                <thead class="text-xs text-white uppercase bg-slate-900 ">
+                <thead class="text-xs text-white uppercase bg-slate-900">
                   <tr>
-                    <th scope="col" class=" py-3 text-base text-start px-6">
+                    <th scope="col" class="py-3 text-base text-start px-6">
                       Instrukcije
                     </th>
                     <th scope="col" class="py-3 text-start px-6">
@@ -103,39 +95,33 @@
                     <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                       Individualno
                     </th>
-                    <td class="px-6 py-4 font-bold">
-                      10,00 €
-                    </td>
+                    <td class="px-6 py-4 font-bold">10,00 €</td>
                   </tr>
                   <tr
                     class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
                     <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                       Grupno
                     </th>
-                    <td class="px-6 py-4 font-bold">
-                      7,50 €
-                    </td>
+                    <td class="px-6 py-4 font-bold">7,50 €</td>
                   </tr>
                 </tbody>
               </table>
             </div>
           </div>
-
-          <div class=" " id='srednjaskola'>
-            <div class="w-full  p-6 pb-1">
+          <div class=" " id="srednjaskola">
+            <div class="w-full p-6 pb-1">
               <h3 class="text-3xl w-full flex justify-center text-gray-800 font-bold leading-none mb-3">
                 Srednja škola
               </h3>
               <p class="text-gray-600 flex justify-center mb-1">
                 Instrukcije za srednju školu
-
               </p>
             </div>
             <div class="w-full flex justify-center p-1 px-5">
               <table class="max-w-md w-full text-sm text-left rtl:text-right border-2 text-gray-500 border-slate-800">
-                <thead class="text-xs text-white uppercase bg-slate-900 ">
+                <thead class="text-xs text-white uppercase bg-slate-900">
                   <tr>
-                    <th scope="col" class=" py-3 text-base text-start px-6">
+                    <th scope="col" class="py-3 text-base text-start px-6">
                       Instrukcije
                     </th>
                     <th scope="col" class="py-3 text-start px-6">
@@ -149,39 +135,33 @@
                     <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                       Individualno
                     </th>
-                    <td class="px-6 py-4 font-bold">
-                      11,00 €
-                    </td>
+                    <td class="px-6 py-4 font-bold">11,00 €</td>
                   </tr>
                   <tr
                     class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
                     <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                       Grupno
                     </th>
-                    <td class="px-6 py-4 font-bold">
-                      8,00 €
-                    </td>
+                    <td class="px-6 py-4 font-bold">8,00 €</td>
                   </tr>
                 </tbody>
               </table>
             </div>
           </div>
-
-          <div class=" " id='fakultet'>
-            <div class="w-full  p-6 pb-1">
+          <div id="fakultet">
+            <div class="w-full p-6 pb-1">
               <h3 class="text-3xl w-full flex justify-center text-gray-800 font-bold leading-none mb-3">
                 Fakultet
               </h3>
               <p class="text-gray-600 flex justify-center mb-1">
                 Instrukcije za fakultet
-
               </p>
             </div>
             <div class="w-full flex justify-center p-1 px-5">
               <table class="max-w-md w-full text-sm text-left rtl:text-right border-2 text-gray-500 border-slate-800">
-                <thead class="text-xs text-white uppercase bg-slate-900 ">
+                <thead class="text-xs text-white uppercase bg-slate-900">
                   <tr>
-                    <th scope="col" class=" py-3 text-base text-start px-6">
+                    <th scope="col" class="py-3 text-base text-start px-6">
                       Instrukcije
                     </th>
                     <th scope="col" class="py-3 text-start px-6">
@@ -195,27 +175,19 @@
                     <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                       Individualno
                     </th>
-                    <td class="px-6 py-4 font-bold">
-                      15,00 €
-                    </td>
+                    <td class="px-6 py-4 font-bold">15,00 €</td>
                   </tr>
                   <tr
                     class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
                     <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                       Grupno
                     </th>
-                    <td class="px-6 py-4 font-bold">
-                      11,00 €
-                    </td>
+                    <td class="px-6 py-4 font-bold">11,00 €</td>
                   </tr>
                 </tbody>
               </table>
             </div>
           </div>
-
-
-
-
         </div>
       </section>
       <div class="relative -mt-[1px]">
@@ -260,7 +232,6 @@
         </div>
         <h2 class="w-full my-2 text-lg lg:text-3xl font-bold leading-tight text-center text-white">
           💻 Fakultet, Fakultet, znanje nam širi svijet!
-
         </h2>
 
         <div class="w-full mb-4">
@@ -303,63 +274,47 @@
   </ClientOnly>
 </template>
 
-
 <script setup>
-  import { ref } from "vue"
-  import { onMounted } from 'vue'
+  import { ref } from "vue";
+  import { onMounted } from "vue";
 
-
-
-  // Initialize components on client side
-
-  const count = ref(1)
+  const count = ref(1);
   onMounted(() => {
-    setInterval(() => { count.value = (count.value % 3) + 1; }, 10000);
+    setInterval(() => {
+      count.value = (count.value % 3) + 1;
+    }, 10000);
   });
 
-
   useHead({
-    title: 'Poduke Parallel',
+    title: "Poduke Parallel",
     meta: [
-      { name: 'description', content: 'Učenje bez muke, uz Parallel poduke!' }
+      { name: "description", content: "Učenje bez muke, uz Parallel poduke!" },
     ],
     bodyAttrs: {
-      class: 'test'
+      class: "test",
     },
-    script: [{ innerHTML: 'console.log(\'Hello world\')' }]
-  })
+    script: [{ innerHTML: "console.log('Hello world')" }],
+  });
 
   useSeoMeta({
-    title: 'Instrukcije | Poduke Parallel',
-    ogTitle: 'Instrukcije | Poduke Parallel',
-    description: 'Bez puno muke, uz Parallel poduke! Održavamo instrukcije iz svih obaveznih i velikog broja stručnih predmeta!',
-    ogDescription: 'Bez puno muke, uz Parallel poduke! Održavamo instrukcije iz svih obaveznih i velikog broja stručnih predmeta!',
-    ogImage: 'https://poduke.vercel.app/instrukcijecjenik.png',
-    twitterCard: 'https://poduke.vercel.app/instrukcijecjenik.png',
-  })
-
-
-
+    title: "Instrukcije | Poduke Parallel",
+    ogTitle: "Instrukcije | Poduke Parallel",
+    description:
+      "Bez puno muke, uz Parallel poduke! Održavamo instrukcije iz svih obaveznih i velikog broja stručnih predmeta!",
+    ogDescription:
+      "Bez puno muke, uz Parallel poduke! Održavamo instrukcije iz svih obaveznih i velikog broja stručnih predmeta!",
+    ogImage: "https://parallel.hr/instrukcijecjenik.png",
+    twitterCard: "https://parallel.hr/instrukcijecjenik.png",
+  });
 </script>
 
 <style scoped>
 .gradient {
   background: #000046;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
+  background: -webkit-linear-gradient(to right, #1cb5e0, #000046);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #1CB5E0, #000046);
+  background: linear-gradient(to right, #1cb5e0, #000046);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-}
-
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s;
-}
-
-.fade-enter,
-.fade-leave-to {
-  opacity: 0;
 }
 </style>

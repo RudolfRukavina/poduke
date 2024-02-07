@@ -3,18 +3,18 @@
     <Title>Pripreme za državnu maturu | Poduke Parallel</Title>
     <Meta name="description"
       content="Bez puno muke, uz Parallel poduke! Uspješno savladajte gradivo neophodno za polaganje državne mature!" />
-    <Style type="text/css" />
   </Head>
   <ClientOnly>
 
-    <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
-
-      <div class="py-10 mx-1" id='cjenik'>
+    <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif">
+      <div class="py-10 mx-1" id="cjenik">
         <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
           <!--Left Col-->
           <div class="flex flex-col w-full md:w-3/5 justify-center items-start text-center md:text-left">
-            <p class=" tracking-loose w-full">Bez puno muke, uz Parallel poduke!</p>
-            <h1 class="mb-4  text-4xl lg:text-5xl font-bold leading-tight w-full">
+            <p class="tracking-loose w-full">
+              Bez puno muke, uz Parallel poduke!
+            </p>
+            <h1 class="mb-4 text-4xl lg:text-5xl font-bold leading-tight w-full">
               Pripreme za državnu maturu
             </h1>
             <p class="leading-normal text-xl mb-8">
@@ -28,7 +28,6 @@
           <!--Right Col-->
           <div class="w-full md:w-2/5 py-6 text-center">
             <img class="w-full md:w-4/5 z-50" src="../assets/img/mojepripreme.png" />
-
           </div>
         </div>
       </div>
@@ -55,43 +54,34 @@
           </g>
         </svg>
       </div>
-      <section class="bg-white py-8 -my-[1px] ">
+      <section class="bg-white py-8 -my-[1px]">
         <div class="container mx-auto pt-4 pb-12 text-gray-800">
           <h2 class="w-full my-2 text-4xl font-bold leading-tight text-center text-gray-800">
             Kalkulator cijene
           </h2>
-          <div class="w-full mb-4" id='mojplanzamaturu'>
+          <div class="w-full mb-4" id="mojplanzamaturu">
             <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
           </div>
-
-          <div class="relative  flex justify-center">
-            <div class=''>
-              <table class="max-w-sm border-2 border-slate-800 text-sm text-left rtl:text-right text-gray-500 ">
-                <thead class="text-xs  text-white uppercase bg-slate-800 ">
+          <div class="relative flex justify-center">
+            <div>
+              <table class="max-w-sm border-2 border-slate-800 text-sm text-left rtl:text-right text-gray-500">
+                <thead class="text-xs text-white uppercase bg-slate-800">
                   <tr>
-                    <th scope="col" class="px-6 py-3">
-                      Državna Matura
-                    </th>
-                    <th scope="col" class="px-6 py-3">
-                      Broj školskih sati
-                    </th>
-                    <th scope="col" class="px-6 py-3">
-                      Cijena
-                    </th>
+                    <th scope="col" class="px-6 py-3">Državna Matura</th>
+                    <th scope="col" class="px-6 py-3">Broj školskih sati</th>
+                    <th scope="col" class="px-6 py-3">Cijena</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr class="bg-white border-b border-gray-200   hover:bg-lime-50" v-for='item in programimature'
-                    v-show='!isInCart(item)' @click='addToCart(item)'>
-
-                    <th scope="row" class="px-6 py-4 font-medium  whitespace-nowrap text-blue-600 ">
-                      <p class='underline font-bold'>
+                  <tr class="bg-white border-b border-gray-200 hover:bg-lime-50" v-for="item in programimature"
+                    v-show="!isInCart(item)" @click="addToCart(item)">
+                    <th scope="row" class="px-6 py-4 font-medium whitespace-nowrap text-blue-600">
+                      <p class="underline font-bold">
                         {{ item.title }}
                       </p>
-                      <p class='p-0 m-0'>
+                      <p class="p-0 m-0">
                         {{ item.razina }}
                       </p>
-
                     </th>
                     <td class="px-6 py-4 text-gray-800 text-base">
                       {{ item.brojSati }}
@@ -100,89 +90,82 @@
                       {{ item.cijena }} €
                     </td>
                   </tr>
-
-
                 </tbody>
               </table>
-
-              <div class="min-w-full px-1  py-6 bg-gray-900 text-center  text-white shadow-xl ">
-
+              <div class="min-w-full px-1 py-6 bg-gray-900 text-center text-white shadow-xl">
                 <div>
-                  <h1 class="text-white font-semibold text-2xl" v-show='kosarica.length === 0'>Kreiraj svoj plan!</h1>
-                  <h1 class="text-white font-semibold text-2xl" v-show='kosarica.length > 0'>Tvoj plan!</h1>
-                  <div v-show='kosarica.length > 0'>
-                    <hr class="mt-4 py-2">
-                    <div class="flex justify-center  text-lg font-medium text-white  bg-green-50  relative">
-
-
-                      <table class="w-full  border-slate-800 text-sm text-left rtl:text-right text-gray-500 ">
-                        <thead class="text-xs  text-white uppercase bg-slate-800 ">
+                  <h1 class="text-white font-semibold text-2xl" v-show="kosarica.length === 0">
+                    Kreiraj svoj plan!
+                  </h1>
+                  <h1 class="text-white font-semibold text-2xl" v-show="kosarica.length > 0">
+                    Tvoj plan!
+                  </h1>
+                  <div v-show="kosarica.length > 0">
+                    <hr class="mt-4 py-2" />
+                    <div class="flex justify-center text-lg font-medium text-white bg-green-50 relative">
+                      <table class="w-full border-slate-800 text-sm text-left rtl:text-right text-gray-500">
+                        <thead class="text-xs text-white uppercase bg-slate-800">
                           <tr>
                             <th scope="col" class="px-6 py-3">
                               Državna Matura
                             </th>
-                            <th scope="col" class="px-6 py-3">
-                              Cijena
-                            </th>
-                            <th scope="col" class="px-6 py-3 relative">
-
-                            </th>
+                            <th scope="col" class="px-6 py-3">Cijena</th>
+                            <th scope="col" class="px-6 py-3 relative"></th>
                           </tr>
                         </thead>
                         <tbody>
-                          <tr class="bg-gray-100 border-b" v-for='item in kosarica'>
-
+                          <tr class="bg-gray-100 border-b" v-for="item in kosarica">
                             <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                              <p class=''>
+                              <p class="">
                                 {{ item.title }}
                               </p>
-                              <p class='p-0 m-0'>
+                              <p class="p-0 m-0">
                                 {{ item.razina }}
                               </p>
-
                             </th>
                             <td class="px-6 py-4 text-nowrap whitespace-nowrap">
                               {{ item.cijena }} €
                             </td>
-                            <td class='relative'>
+                            <td class="relative">
                               <div
-                                class='absolute top-0 right-0 text-white bg-red-500 p-2 px-4 rounded-bl-lg hover:bg-red-600'
-                                @click='removeFromCart(item)'> <i class="fa fa-ban"></i></div>
+                                class="absolute top-0 right-0 text-white bg-red-500 p-2 px-4 rounded-bl-lg hover:bg-red-600"
+                                @click="removeFromCart(item)">
+                                <i class="fa fa-ban"></i>
+                              </div>
                             </td>
                           </tr>
                         </tbody>
                       </table>
                     </div>
                   </div>
-                  <hr class="mt-4 border-1 border-gray-600">
+                  <hr class="mt-4 border-1 border-gray-600" />
                   <p class="pt-2 tracking-wide">
-
-                    <span class="text-3xl font-semibold">{{ discountedTotalAmount }}</span>
+                    <span class="text-3xl font-semibold">{{
+                      discountedTotalAmount
+                    }}</span>
                     <span class="text-gray-400 align-top">€</span>
                     <span class="text-gray-400 font-medium">/ {{ totalHoursAmount }} školskih sati</span>
                   </p>
-                  <p class="mt-1 text-[12px] text-zinc-500 dark:text-zinc-400 font-light lg:text-base">Primjenjeno
-                    <span class='font-bold'>{{ discountPercentage * 100 }}% popusta </span>.
+                  <p class="mt-1 text-[12px] text-zinc-500 dark:text-zinc-400 font-light lg:text-base">
+                    Primjenjeno
+                    <span class="font-bold">{{ discountPercentage * 100 }}% popusta </span>.
                   </p>
-
                 </div>
-
-
-
               </div>
             </div>
           </div>
-
-          <div class='w-full text-center px-5'>
-            <li class="mt-1 text-sm text-zinc-500 dark:text-zinc-400 font-light lg:text-base underline">Moguće je obročno
-              plaćanje paketa
-              priprema za državnu maturu.</li>
-            <li class="mt-1 text-[12px] text-zinc-500 dark:text-zinc-400 font-light lg:text-base">Ukoliko upišete pripreme
-              za
-              državnu maturu iz dva predmeta odobravamo <span class='font-bold'> 10% popusta</span>.</li>
-            <li class="mt-1 text-[12px] text-zinc-500 dark:text-zinc-400 font-light lg:text-base">Ukoliko upišete pripreme
-              za
-              državnu maturu iz tri ili više predmeta odobravamo <span class='font-bold lg:text-lg'> 20% popusta</span>.
+          <div class="w-full text-center px-5">
+            <li class="mt-1 text-sm text-zinc-500 dark:text-zinc-400 font-light lg:text-base underline">
+              Moguće je obročno plaćanje paketa priprema za državnu maturu.
+            </li>
+            <li class="mt-1 text-[12px] text-zinc-500 dark:text-zinc-400 font-light lg:text-base">
+              Ukoliko upišete pripreme za državnu maturu iz dva predmeta
+              odobravamo <span class="font-bold"> 10% popusta</span>.
+            </li>
+            <li class="mt-1 text-[12px] text-zinc-500 dark:text-zinc-400 font-light lg:text-base">
+              Ukoliko upišete pripreme za državnu maturu iz tri ili više
+              predmeta odobravamo
+              <span class="font-bold lg:text-lg"> 20% popusta</span>.
             </li>
           </div>
         </div>
@@ -212,14 +195,13 @@
           </g>
         </g>
       </svg>
-      <section class="container mx-auto text-center py-1" id='radnovrijeme'>
+      <section class="container mx-auto text-center py-1" id="radnovrijeme">
         <h2 class="w-full my-2 text-3xl font-bold leading-tight text-center text-white">
           ✏️ Prijave traju do 11.03.2024.
         </h2>
         <div class="w-full mb-4">
           <div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
         </div>
-
         <a href="tel:+385917865619">
           <button
             class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
@@ -227,37 +209,37 @@
           </button>
         </a>
       </section>
-      <section class="bg-sky-50 rounded-2xl flex justify-center p-5 mb-20 max-w-sm mx-auto shadow-lg ">
-        <div class='grid grid-cols-1 w-full'>
-          <div class="py-0 px-4 ">
-            <p class="mb-4 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">ili nam pošaljite
-              e-mail!</p>
+      <section class="bg-sky-50 rounded-2xl flex justify-center p-5 mb-20 max-w-sm mx-auto shadow-lg">
+        <div class="grid grid-cols-1 w-full">
+          <div class="py-0 px-4">
+            <p class="mb-4 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
+              ili nam pošaljite e-mail!
+            </p>
             <form action="#" class="space-y-8">
               <div>
                 <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Vaše ime</label>
-                <input type="text" id="name" v-model='clientName'
+                <input type="text" id="name" v-model="clientName"
                   class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-[16px] rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                  required>
+                  required />
               </div>
               <div>
                 <label for="tel" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Vaš broj
                   telefona</label>
-                <input type="tel" id="tel" v-model='phoneNumber'
+                <input type="tel" id="tel" v-model="phoneNumber"
                   class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-[16px] rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                  required>
+                  required />
               </div>
               <div class="sm:col-span-2">
                 <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Vaša
                   poruka</label>
                 <textarea id="message" rows="10" v-model="selectedItemsText"
                   class="block p-2.5 w-full text-[16px] text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                  placeholder=""></textarea>
-
+                  placeholder="">
+                </textarea>
               </div>
-
-              <a :href="generateMailtoLink()" v-show='clientName && phoneNumber'>
+              <a :href="generateMailtoLink()" v-show="clientName && phoneNumber">
                 <div
-                  class="text-center max-w-sm  hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                  class="text-center max-w-sm hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
                   Pošaljite e-mail
                 </div>
               </a>
@@ -296,33 +278,37 @@
 .gradient {
   background: #667db6;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+  background: -webkit-linear-gradient(to right,
+      #667db6,
+      #0082c8,
+      #0082c8,
+      #667db6);
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
 </style>
 
 <script setup>
-  import { ref } from "vue"
+  import { ref } from "vue";
 
   useSeoMeta({
-    title: 'Pripreme za državnu maturu | Poduke Parallel',
-    ogTitle: 'Pripreme za državnu maturu | Poduke Parallel',
-    description: 'Bez puno muke, uz Parallel poduke! Uspješno savladajte gradivo neophodno za polaganje državne mature!',
-    ogDescription: 'Bez puno muke, uz Parallel poduke! Uspješno savladajte gradivo neophodno za polaganje državne mature!',
-    ogImage: 'https://poduke.vercel.app/mojepripreme.png',
-    twitterCard: 'https://poduke.vercel.app/mojepripreme.png',
-  })
+    title: "Pripreme za državnu maturu | Poduke Parallel",
+    ogTitle: "Pripreme za državnu maturu | Poduke Parallel",
+    description:
+      "Bez puno muke, uz Parallel poduke! Uspješno savladajte gradivo neophodno za polaganje državne mature!",
+    ogDescription:
+      "Bez puno muke, uz Parallel poduke! Uspješno savladajte gradivo neophodno za polaganje državne mature!",
+    ogImage: "https://parallel.hr/mojepripreme.png",
+    twitterCard: "https://parallel.hr/mojepripreme.png",
+  });
 
-  const selectedPriprema = ref()
-  const kosarica = ref([])
-
+  const selectedPriprema = ref();
+  const kosarica = ref([]);
 
   const generateMailtoLink = () => {
-    const recipient = 'parallel.upiti@gmail.com';
-    const subject = 'Upit za pripreme za državnu maturu';
+    const recipient = "parallel.upiti@gmail.com";
+    const subject = "Upit za pripreme za državnu maturu";
     const body = selectedItemsText.value;
 
     const encodedRecipient = encodeURIComponent(recipient);
@@ -333,7 +319,9 @@
   };
 
   const addToCart = (program) => {
-    const existingItemIndex = kosarica.value.findIndex(item => item.title === program.title);
+    const existingItemIndex = kosarica.value.findIndex(
+      (item) => item.title === program.title
+    );
 
     if (existingItemIndex !== -1) {
       kosarica.value.splice(existingItemIndex, 1);
@@ -344,18 +332,26 @@
   };
 
   const removeFromCart = (itemToRemove) => {
-    const index = kosarica.value.findIndex(item => item.title === itemToRemove.title);
+    const index = kosarica.value.findIndex(
+      (item) => item.title === itemToRemove.title
+    );
     if (index !== -1) {
       kosarica.value.splice(index, 1);
     }
   };
 
   const totalAmount = computed(() => {
-    return kosarica.value.reduce((total, item) => total + parseFloat(item.cijena) * item.quantity, 0);
+    return kosarica.value.reduce(
+      (total, item) => total + parseFloat(item.cijena) * item.quantity,
+      0
+    );
   });
 
   const totalHoursAmount = computed(() => {
-    return kosarica.value.reduce((total, item) => total + parseFloat(item.brojSati), 0);
+    return kosarica.value.reduce(
+      (total, item) => total + parseFloat(item.brojSati),
+      0
+    );
   });
 
   const discountPercentage = computed(() => {
@@ -368,72 +364,73 @@
     return 0;
   });
 
-  const phoneNumber = ref("")
-  const clientName = ref("")
-
+  const phoneNumber = ref("");
+  const clientName = ref("");
 
   const selectedItemsText = computed(() => {
-    const salutation = 'Poštovani, zanimaju me Vaše usluge priprema za državnu maturu iz predmeta:';
-    const itemsText = kosarica.value.map(item => `- ${item.title} ${item.razina}`).join('\n');
-    return `${salutation}\n\n${itemsText}\n\n${clientName.value ? 'Lijep pozdrav, \n' + clientName.value + ',' : ""} \n${phoneNumber.value ? 'Moj broj telefona: ' + phoneNumber.value : ""}`;
+    const salutation =
+      "Poštovani, zanimaju me Vaše usluge priprema za državnu maturu iz predmeta:";
+    const itemsText = kosarica.value
+      .map((item) => `- ${item.title} ${item.razina}`)
+      .join("\n");
+    return `${salutation}\n\n${itemsText}\n\n${clientName.value ? "Lijep pozdrav, \n" + clientName.value + "," : ""
+      } \n${phoneNumber.value ? "Moj broj telefona: " + phoneNumber.value : ""}`;
   });
 
   const discountedTotalAmount = computed(() => {
     const total = totalAmount.value;
-    return total - (total * discountPercentage.value);
+    return total - total * discountPercentage.value;
   });
 
   const isInCart = (item) => {
-    return kosarica.value.some(cartItem => cartItem.title === item.title && cartItem.razina === item.razina);
+    return kosarica.value.some(
+      (cartItem) =>
+        cartItem.title === item.title && cartItem.razina === item.razina
+    );
   };
-
-
-
 
   const programimature = ref([
     {
-      title: 'MATEMATIKA',
-      razina: 'A razina',
-      brojSati: '70',
-      cijena: '420,00'
+      title: "MATEMATIKA",
+      razina: "A razina",
+      brojSati: "70",
+      cijena: "420,00",
     },
     {
-      title: 'MATEMATIKA',
-      razina: 'B razina',
-      brojSati: '50',
-      cijena: '300,00'
+      title: "MATEMATIKA",
+      razina: "B razina",
+      brojSati: "50",
+      cijena: "300,00",
     },
     {
-      title: 'ENGLESKI',
-      razina: 'A razina',
-      brojSati: '40',
-      cijena: '240,00'
+      title: "ENGLESKI",
+      razina: "A razina",
+      brojSati: "40",
+      cijena: "240,00",
     },
     {
-      title: 'ENGLESKI',
-      razina: 'B razina',
-      brojSati: '30',
-      cijena: '180,00'
+      title: "ENGLESKI",
+      razina: "B razina",
+      brojSati: "30",
+      cijena: "180,00",
     },
     {
-      title: 'HRVATSKI',
-      razina: '',
-      brojSati: '60',
-      cijena: '360,00'
+      title: "HRVATSKI",
+      razina: "",
+      brojSati: "60",
+      cijena: "360,00",
     },
     {
-      title: 'FIZIKA',
-      razina: '',
-      brojSati: '60',
-      cijena: '360,00'
+      title: "FIZIKA",
+      razina: "",
+      brojSati: "60",
+      cijena: "360,00",
     },
     {
-      title: 'KEMIJA',
-      razina: '',
-      brojSati: '60',
-      cijena: '360,00'
+      title: "KEMIJA",
+      razina: "",
+      brojSati: "60",
+      cijena: "360,00",
     },
-  ])
+  ]);
 </script>
-
-
