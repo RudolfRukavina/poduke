@@ -3,7 +3,7 @@
     <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
       <NuxtLink :to="{ path: '/', hash: '#naslovnica' }" class="flex items-center space-x-3 rtl:space-x-reverse">
         <h1
-          class="text-2xl font-extrabold tracking-tight leading-none text-black drop-shadow-xl [text-shadow:_0_4px_0_rgb(0_0_0_/_10%)] lg:text-4xl">
+          class="text-2xl font-extrabold tracking-tight leading-none text-black drop-shadow-xl [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)] lg:text-4xl">
           Poduke Parallel
         </h1>
       </NuxtLink>
