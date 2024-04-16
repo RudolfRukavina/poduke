@@ -1,4 +1,5 @@
 <template>
+
   <Head>
     <Title>O nama | Poduke Parallel</Title>
     <Meta name="description"
@@ -169,7 +170,7 @@
             Parallel je novo osnovana škola čiji je temeljni cilj olakšati
             učenje kroz organizaciju individualnih i grupnih poduka, seminara,
             radionica i predavanja. Školu Parallel utemeljila su četiri mlada
-            stručnjaka u Rijeci u želji da svojim znanjem i iskustvom
+            studenta u Rijeci u želji da svojim znanjem i iskustvom
             organiziraju učenje na pristupačan i zanimljiv način. Cilj nam je uz
             konstantno unaprijeđivanje usluga i praćenje najnovijih trendova
             omogućiti obrazovanje i poučavanje iz raznovrsnih područja za sve
@@ -273,16 +274,16 @@
 </template>
 
 <script setup>
-  useSeoMeta({
-    title: "O nama | Poduke Parallel",
-    ogTitle: "O nama | Poduke Parallel",
-    description:
-      "Parallel je novo osnovana škola čiji je temeljni cilj olakšati učenje kroz organizaciju individualnih i grupnih poduka, seminara, radionica i predavanja. Cilj nam je uz konstantno unaprijeđivanje usluga i praćenje najnovijih trendova omogućiti obrazovanje i poučavanje iz raznovrsnih područja za sve uzraste.",
-    ogDescription:
-      "Parallel je novo osnovana škola čiji je temeljni cilj olakšati učenje kroz organizaciju individualnih i grupnih poduka, seminara, radionica i predavanja. Cilj nam je uz konstantno unaprijeđivanje usluga i praćenje najnovijih trendova omogućiti obrazovanje i poučavanje iz raznovrsnih područja za sve uzraste.",
-    ogImage: "https://parallel.hr/ucionica.jpeg",
-    twitterCard: "https://parallel.hr/ucionica.jpeg",
-  });
+useSeoMeta({
+  title: "O nama | Poduke Parallel",
+  ogTitle: "O nama | Poduke Parallel",
+  description:
+    "Parallel je novo osnovana škola čiji je temeljni cilj olakšati učenje kroz organizaciju individualnih i grupnih poduka, seminara, radionica i predavanja. Cilj nam je uz konstantno unaprijeđivanje usluga i praćenje najnovijih trendova omogućiti obrazovanje i poučavanje iz raznovrsnih područja za sve uzraste.",
+  ogDescription:
+    "Parallel je novo osnovana škola čiji je temeljni cilj olakšati učenje kroz organizaciju individualnih i grupnih poduka, seminara, radionica i predavanja. Cilj nam je uz konstantno unaprijeđivanje usluga i praćenje najnovijih trendova omogućiti obrazovanje i poučavanje iz raznovrsnih područja za sve uzraste.",
+  ogImage: "https://parallel.hr/ucionica.jpeg",
+  twitterCard: "https://parallel.hr/ucionica.jpeg",
+});
 </script>
 
 <style scoped>
