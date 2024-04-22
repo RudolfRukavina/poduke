@@ -1,4 +1,5 @@
 <template>
+
   <Head>
     <Title>Pripreme za državnu maturu | Poduke Parallel</Title>
     <Meta name="description"
@@ -115,7 +116,8 @@
                         </thead>
                         <tbody>
                           <tr class="bg-gray-100 border-b" v-for="item in kosarica">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            <th scope="row"
+                              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                               <p class="">
                                 {{ item.title }}
                               </p>
@@ -141,8 +143,8 @@
                   <hr class="mt-4 border-1 border-gray-600" />
                   <p class="pt-2 tracking-wide">
                     <span class="text-3xl font-semibold">{{
-                      discountedTotalAmount
-                    }}</span>
+                    discountedTotalAmount
+                  }}</span>
                     <span class="text-gray-400 align-top">€</span>
                     <span class="text-gray-400 font-medium">/ {{ totalHoursAmount }} školskih sati</span>
                   </p>
@@ -196,12 +198,7 @@
         </g>
       </svg>
       <section class="container mx-auto text-center py-1" id="radnovrijeme">
-        <h2 class="w-full my-2 text-3xl font-bold leading-tight text-center text-white">
-          ✏️ Prijave traju do 11.03.2024.
-        </h2>
-        <div class="w-full mb-4">
-          <div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
-        </div>
+
         <a href="tel:+385917865619">
           <button
             class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
@@ -217,7 +214,8 @@
             </p>
             <form action="#" class="space-y-8">
               <div>
-                <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Vaše ime</label>
+                <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Vaše
+                  ime</label>
                 <input type="text" id="name" v-model="clientName"
                   class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-[16px] rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                   required />
@@ -237,12 +235,31 @@
                   placeholder="">
                 </textarea>
               </div>
-              <a :href="generateMailtoLink()" v-show="clientName && phoneNumber">
-                <div
-                  class="text-center max-w-sm hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                  Pošaljite e-mail
-                </div>
-              </a>
+              <div class="flex justify-evenly" v-show="clientName && phoneNumber">
+                <a :href="generateMailtoLink()">
+                  <div
+                    class="text-center max-w-sm hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                    Pošaljite kao e-mail
+                  </div>
+                </a>
+                <span class="text-black flex items-center">ili</span>
+                <a :href="generateWhatsapptoLink() " class="flex items-center" target="_blank">
+                  <svg class="w-14 rounded-lg custom-shadow border border-white hover:border-none"
+                    xmlns="http://www.w3.org/2000/svg" aria-label="WhatsApp" role="img" viewBox="0 0 512 512"
+                    fill="#000000">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <rect width="512" height="512" rx="15%" fill="#25d366"></rect>
+                      <path fill="#25d366" stroke="#ffffff" stroke-width="26" d="M123 393l14-65a138 138 0 1150 47z">
+                      </path>
+                      <path fill="#ffffff"
+                        d="M308 273c-3-2-6-3-9 1l-12 16c-3 2-5 3-9 1-15-8-36-17-54-47-1-4 1-6 3-8l9-14c2-2 1-4 0-6l-12-29c-3-8-6-7-9-7h-8c-2 0-6 1-10 5-22 22-13 53 3 73 3 4 23 40 66 59 32 14 39 12 48 10 11-1 22-10 27-19 1-3 6-16 2-18">
+                      </path>
+                    </g>
+                  </svg>
+                </a>
+              </div>
             </form>
           </div>
         </div>
@@ -276,161 +293,166 @@
 
 <style scoped>
 .gradient {
-  background: #667db6;
+  background: #00b4db;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right,
-      #667db6,
-      #0082c8,
-      #0082c8,
-      #667db6);
+  background: -webkit-linear-gradient(to right, #0083b0, #00b4db);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+  background: linear-gradient(to right, #0083b0, #00b4db);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 </style>
 
 <script setup>
-  import { ref } from "vue";
+import { ref } from "vue";
 
-  useSeoMeta({
-    title: "Pripreme za državnu maturu | Poduke Parallel",
-    ogTitle: "Pripreme za državnu maturu | Poduke Parallel",
-    description:
-      "Bez puno muke, uz Parallel poduke! Uspješno savladajte gradivo neophodno za polaganje državne mature!",
-    ogDescription:
-      "Bez puno muke, uz Parallel poduke! Uspješno savladajte gradivo neophodno za polaganje državne mature!",
-    ogImage: "https://parallel.hr/mojepripreme.png",
-    twitterCard: "https://parallel.hr/mojepripreme.png",
-  });
+useSeoMeta({
+  title: "Pripreme za državnu maturu | Poduke Parallel",
+  ogTitle: "Pripreme za državnu maturu | Poduke Parallel",
+  description:
+    "Bez puno muke, uz Parallel poduke! Uspješno savladajte gradivo neophodno za polaganje državne mature!",
+  ogDescription:
+    "Bez puno muke, uz Parallel poduke! Uspješno savladajte gradivo neophodno za polaganje državne mature!",
+  ogImage: "https://parallel.hr/mojepripreme.png",
+  twitterCard: "https://parallel.hr/mojepripreme.png",
+});
 
-  const selectedPriprema = ref();
-  const kosarica = ref([]);
+const selectedPriprema = ref();
+const kosarica = ref([]);
 
-  const generateMailtoLink = () => {
-    const recipient = "parallel.upiti@gmail.com";
-    const subject = "Upit za pripreme za državnu maturu";
-    const body = selectedItemsText.value;
+const generateWhatsapptoLink = () => {
+  const recipient = "385917865619";
+  const message = selectedItemsText.value;
 
-    const encodedRecipient = encodeURIComponent(recipient);
-    const encodedSubject = encodeURIComponent(subject);
-    const encodedBody = encodeURIComponent(body);
+  const encodedMessage = encodeURIComponent(message);
 
-    return `mailto:${encodedRecipient}?subject=${encodedSubject}&body=${encodedBody}`;
-  };
+  return `https://api.whatsapp.com/send?phone=${recipient}&text=${encodedMessage}`;
+};
 
-  const addToCart = (program) => {
-    const existingItemIndex = kosarica.value.findIndex(
-      (item) => item.title === program.title
-    );
+const generateMailtoLink = () => {
+  const recipient = "parallel.upiti@gmail.com";
+  const subject = "Upit za pripreme za državnu maturu";
+  const body = selectedItemsText.value;
 
-    if (existingItemIndex !== -1) {
-      kosarica.value.splice(existingItemIndex, 1);
-    }
+  const encodedRecipient = encodeURIComponent(recipient);
+  const encodedSubject = encodeURIComponent(subject);
+  const encodedBody = encodeURIComponent(body);
 
-    kosarica.value.push({ ...program, quantity: 1 });
-    selectedPriprema.value = null;
-  };
+  return `mailto:${encodedRecipient}?subject=${encodedSubject}&body=${encodedBody}`;
+};
 
-  const removeFromCart = (itemToRemove) => {
-    const index = kosarica.value.findIndex(
-      (item) => item.title === itemToRemove.title
-    );
-    if (index !== -1) {
-      kosarica.value.splice(index, 1);
-    }
-  };
+const addToCart = (program) => {
+  const existingItemIndex = kosarica.value.findIndex(
+    (item) => item.title === program.title
+  );
 
-  const totalAmount = computed(() => {
-    return kosarica.value.reduce(
-      (total, item) => total + parseFloat(item.cijena) * item.quantity,
-      0
-    );
-  });
+  if (existingItemIndex !== -1) {
+    kosarica.value.splice(existingItemIndex, 1);
+  }
 
-  const totalHoursAmount = computed(() => {
-    return kosarica.value.reduce(
-      (total, item) => total + parseFloat(item.brojSati),
-      0
-    );
-  });
+  kosarica.value.push({ ...program, quantity: 1 });
+  selectedPriprema.value = null;
+};
 
-  const discountPercentage = computed(() => {
-    const selectedCount = kosarica.value.length;
-    if (selectedCount === 2) {
-      return 0.1;
-    } else if (selectedCount >= 3) {
-      return 0.2;
-    }
-    return 0;
-  });
+const removeFromCart = (itemToRemove) => {
+  const index = kosarica.value.findIndex(
+    (item) => item.title === itemToRemove.title
+  );
+  if (index !== -1) {
+    kosarica.value.splice(index, 1);
+  }
+};
 
-  const phoneNumber = ref("");
-  const clientName = ref("");
+const totalAmount = computed(() => {
+  return kosarica.value.reduce(
+    (total, item) => total + parseFloat(item.cijena) * item.quantity,
+    0
+  );
+});
 
-  const selectedItemsText = computed(() => {
-    const salutation =
-      "Poštovani, zanimaju me Vaše usluge priprema za državnu maturu iz predmeta:";
-    const itemsText = kosarica.value
-      .map((item) => `- ${item.title} ${item.razina}`)
-      .join("\n");
-    return `${salutation}\n\n${itemsText}\n\n${clientName.value ? "Lijep pozdrav, \n" + clientName.value + "," : ""
-      } \n${phoneNumber.value ? "Moj broj telefona: " + phoneNumber.value : ""}`;
-  });
+const totalHoursAmount = computed(() => {
+  return kosarica.value.reduce(
+    (total, item) => total + parseFloat(item.brojSati),
+    0
+  );
+});
 
-  const discountedTotalAmount = computed(() => {
-    const total = totalAmount.value;
-    return total - total * discountPercentage.value;
-  });
+const discountPercentage = computed(() => {
+  const selectedCount = kosarica.value.length;
+  if (selectedCount === 2) {
+    return 0.1;
+  } else if (selectedCount >= 3) {
+    return 0.2;
+  }
+  return 0;
+});
 
-  const isInCart = (item) => {
-    return kosarica.value.some(
-      (cartItem) =>
-        cartItem.title === item.title && cartItem.razina === item.razina
-    );
-  };
+const phoneNumber = ref("");
+const clientName = ref("");
 
-  const programimature = ref([
-    {
-      title: "MATEMATIKA",
-      razina: "A razina",
-      brojSati: "70",
-      cijena: "420,00",
-    },
-    {
-      title: "MATEMATIKA",
-      razina: "B razina",
-      brojSati: "50",
-      cijena: "300,00",
-    },
-    {
-      title: "ENGLESKI",
-      razina: "A razina",
-      brojSati: "40",
-      cijena: "240,00",
-    },
-    {
-      title: "ENGLESKI",
-      razina: "B razina",
-      brojSati: "30",
-      cijena: "180,00",
-    },
-    {
-      title: "HRVATSKI",
-      razina: "",
-      brojSati: "60",
-      cijena: "360,00",
-    },
-    {
-      title: "FIZIKA",
-      razina: "",
-      brojSati: "60",
-      cijena: "360,00",
-    },
-    {
-      title: "KEMIJA",
-      razina: "",
-      brojSati: "60",
-      cijena: "360,00",
-    },
-  ]);
+const selectedItemsText = computed(() => {
+  const salutation =
+    "Poštovani, zanimaju me Vaše usluge priprema za državnu maturu iz predmeta:";
+  const itemsText = kosarica.value
+    .map((item) => `- ${item.title} ${item.razina}`)
+    .join("\n");
+  return `${salutation}\n\n${itemsText}\n\n${clientName.value ? "Lijep pozdrav, \n" + clientName.value + "," : ""
+    } \n${phoneNumber.value ? "Moj broj telefona: " + phoneNumber.value : ""}`;
+});
+
+const discountedTotalAmount = computed(() => {
+  const total = totalAmount.value;
+  return total - total * discountPercentage.value;
+});
+
+const isInCart = (item) => {
+  return kosarica.value.some(
+    (cartItem) =>
+      cartItem.title === item.title && cartItem.razina === item.razina
+  );
+};
+
+const programimature = ref([
+  {
+    title: "MATEMATIKA",
+    razina: "A razina",
+    brojSati: "70",
+    cijena: "420,00",
+  },
+  {
+    title: "MATEMATIKA",
+    razina: "B razina",
+    brojSati: "50",
+    cijena: "300,00",
+  },
+  {
+    title: "ENGLESKI",
+    razina: "A razina",
+    brojSati: "40",
+    cijena: "240,00",
+  },
+  {
+    title: "ENGLESKI",
+    razina: "B razina",
+    brojSati: "30",
+    cijena: "180,00",
+  },
+  {
+    title: "HRVATSKI",
+    razina: "",
+    brojSati: "60",
+    cijena: "360,00",
+  },
+  {
+    title: "FIZIKA",
+    razina: "",
+    brojSati: "60",
+    cijena: "360,00",
+  },
+  {
+    title: "KEMIJA",
+    razina: "",
+    brojSati: "60",
+    cijena: "360,00",
+  },
+]);
 </script>
